@@ -1,0 +1,25 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Claude Code harness local session/runtime state (not site content)
+.claude/
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
+
+# Logs / temp
+*.log
+.tmp/
+.cache/
+
+# Node tooling, in case build tooling is ever added
+node_modules/
+package-lock.json
