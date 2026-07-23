@@ -179,6 +179,10 @@ a:hover { text-decoration: underline; }
   gap: 10px;
 }
 
+.hero-cta {
+  margin-top: 20px;
+}
+
 .pill {
   font-size: 13px;
   color: var(--on-secondary);
