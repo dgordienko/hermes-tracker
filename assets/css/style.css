@@ -422,13 +422,15 @@ h2.section-title {
 
 figure.screenshot {
   margin: 0;
-  max-width: 240px;
-  width: 100%;
+  flex: 0 1 240px;
+  width: 240px;
+  max-width: 100%;
 }
 
 figure.screenshot img {
   display: block;
   width: 100%;
+  height: auto;
   border: 1px solid var(--navy-border);
   border-radius: var(--radius-md);
   box-shadow: 0 16px 40px -16px rgba(0, 0, 0, 0.5);
