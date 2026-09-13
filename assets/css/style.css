@@ -385,6 +385,11 @@ h2.section-title {
 .policy ul li, .policy ol li { margin-bottom: 8px; }
 .policy ul li::marker, .policy ol li::marker { color: var(--accent-blue); }
 
+.anchor {
+  display: block;
+  scroll-margin-top: 84px;
+}
+
 .toc {
   display: flex;
   flex-wrap: wrap;
@@ -405,6 +410,35 @@ h2.section-title {
   color: var(--on-secondary);
   font-size: 13.5px;
   margin-bottom: 8px;
+}
+
+.screenshot-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 24px 0;
+}
+
+figure.screenshot {
+  margin: 0;
+  max-width: 240px;
+  width: 100%;
+}
+
+figure.screenshot img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--navy-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 16px 40px -16px rgba(0, 0, 0, 0.5);
+}
+
+figure.screenshot figcaption {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--on-secondary);
+  font-size: 13px;
 }
 
 .back-link {
