@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>User Guide — Hermes Tracker</title>
+<meta name="description" content="How to use Hermes Tracker: recording routes, checking in at delivery points, history, and settings.">
+<link rel="icon" type="image/svg+xml" href="assets/img/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" style="text-decoration:none;">
+      <span class="mark"><img src="assets/img/mark.svg" alt="" width="28" height="28"></span>
+      Hermes Tracker
+    </a>
+    <nav class="header-nav">
+      <a class="nav-link" href="privacy.html">
+        <span data-lang-block="en">Privacy Policy</span>
+        <span data-lang-block="ru">Политика конфиденциальности</span>
+        <span data-lang-block="uk">Політика конфіденційності</span>
+      </a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn" type="button" data-set-lang="en">EN</button>
+        <button class="lang-btn" type="button" data-set-lang="ru">RU</button>
+        <button class="lang-btn" type="button" data-set-lang="uk">UA</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap policy">
+
+    <a class="back-link" href="index.html">
+      <span data-lang-block="en">&larr; Back to Hermes Tracker</span>
+      <span data-lang-block="ru">&larr; Назад к Hermes Tracker</span>
+      <span data-lang-block="uk">&larr; Назад до Hermes Tracker</span>
+    </a>
+
+    <h1 data-lang-block="en">User Guide</h1>
+    <h1 data-lang-block="ru">Руководство пользователя</h1>
+    <h1 data-lang-block="uk">Посібник користувача</h1>
+
+    <p class="updated" data-lang-block="en">Covers app version 1.9</p>
+    <p class="updated" data-lang-block="ru">Актуально для версии приложения 1.9</p>
+    <p class="updated" data-lang-block="uk">Актуально для версії застосунку 1.9</p>
+
+    <p data-lang-block="en">Hermes Tracker has four tabs at the bottom of the screen: <strong>Record</strong>, <strong>History</strong>, <strong>Points</strong> and <strong>Settings</strong>. This guide walks through each of them.</p>
+    <p data-lang-block="ru">В нижней части экрана Hermes Tracker расположены четыре вкладки: <strong>Запись</strong>, <strong>История</strong>, <strong>Точки</strong> и <strong>Настройки</strong>. Это руководство описывает каждую из них.</p>
+    <p data-lang-block="uk">У нижній частині екрана Hermes Tracker розташовано чотири вкладки: <strong>Запис</strong>, <strong>Історія</strong>, <strong>Точки</strong> та <strong>Налаштування</strong>. Цей посібник описує кожну з них.</p>
+
+    <nav class="toc" aria-label="Sections">
+      <a class="pill" href="#getting-started" data-lang-block="en">Getting started</a>
+      <a class="pill" href="#getting-started" data-lang-block="ru">Начало работы</a>
+      <a class="pill" href="#getting-started" data-lang-block="uk">Початок роботи</a>
+
+      <a class="pill" href="#recording" data-lang-block="en">Recording a route</a>
+      <a class="pill" href="#recording" data-lang-block="ru">Запись маршрута</a>
+      <a class="pill" href="#recording" data-lang-block="uk">Запис маршруту</a>
+
+      <a class="pill" href="#history" data-lang-block="en">History</a>
+      <a class="pill" href="#history" data-lang-block="ru">История</a>
+      <a class="pill" href="#history" data-lang-block="uk">Історія</a>
+
+      <a class="pill" href="#points" data-lang-block="en">Delivery points</a>
+      <a class="pill" href="#points" data-lang-block="ru">Точки доставки</a>
+      <a class="pill" href="#points" data-lang-block="uk">Точки доставки</a>
+
+      <a class="pill" href="#settings" data-lang-block="en">Settings</a>
+      <a class="pill" href="#settings" data-lang-block="ru">Настройки</a>
+      <a class="pill" href="#settings" data-lang-block="uk">Налаштування</a>
+    </nav>
+
+    <!-- 1. Getting started -->
+    <h2 id="getting-started" data-lang-block="en">1. Getting Started</h2>
+    <h2 id="getting-started" data-lang-block="ru">1. Начало работы</h2>
+    <h2 id="getting-started" data-lang-block="uk">1. Початок роботи</h2>
+
+    <h3 data-lang-block="en">Permissions</h3>
+    <h3 data-lang-block="ru">Разрешения</h3>
+    <h3 data-lang-block="uk">Дозволи</h3>
+
+    <p data-lang-block="en">Before you can start recording, the app explains why it needs location access and asks you to confirm. You'll then be asked to grant, in order:</p>
+    <p data-lang-block="ru">Перед началом записи приложение объясняет, зачем ему нужен доступ к геолокации, и просит подтвердить это. После этого будет предложено предоставить по очереди:</p>
+    <p data-lang-block="uk">Перед початком запису застосунок пояснює, навіщо йому потрібен доступ до геолокації, і просить підтвердити це. Після цього буде запропоновано надати по черзі:</p>
+
+    <ul data-lang-block="en">
+      <li><strong>Location</strong> — required to record your route while the app is open.</li>
+      <li><strong>Background location</strong> (Android 10+) — required so recording continues with the screen off or the app minimized.</li>
+      <li><strong>Notifications</strong> (Android 13+) — shows the ongoing recording status.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li><strong>Геолокация</strong> — нужна для записи маршрута, пока приложение открыто.</li>
+      <li><strong>Фоновая геолокация</strong> (Android 10+) — нужна, чтобы запись продолжалась при выключенном экране или свёрнутом приложении.</li>
+      <li><strong>Уведомления</strong> (Android 13+) — показывают текущий статус записи.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li><strong>Геолокація</strong> — потрібна для запису маршруту, поки застосунок відкрито.</li>
+      <li><strong>Фонова геолокація</strong> (Android 10+) — потрібна, щоб запис тривав при вимкненому екрані або згорнутому застосунку.</li>
+      <li><strong>Сповіщення</strong> (Android 13+) — показують поточний статус запису.</li>
+    </ul>
+
+    <p data-lang-block="en">You can review or change any of these later in <strong>Settings → App permissions</strong>. Some phone manufacturers also aggressively stop background apps to save battery — if recording keeps getting interrupted, open <strong>Settings → Background app management</strong> and allow Hermes Tracker to run unrestricted.</p>
+    <p data-lang-block="ru">Позже эти разрешения можно проверить или изменить в разделе <strong>Настройки → Разрешения приложения</strong>. Некоторые производители телефонов агрессивно останавливают фоновые приложения для экономии заряда — если запись постоянно прерывается, откройте <strong>Настройки → Управление фоновыми приложениями</strong> и разрешите Hermes Tracker работать без ограничений.</p>
+    <p data-lang-block="uk">Пізніше ці дозволи можна перевірити чи змінити в розділі <strong>Налаштування → Дозволи застосунку</strong>. Деякі виробники телефонів агресивно зупиняють фонові застосунки для економії заряду — якщо запис постійно переривається, відкрийте <strong>Налаштування → Управління фоновими застосунками</strong> і дозвольте Hermes Tracker працювати без обмежень.</p>
+
+    <h3 data-lang-block="en">Registering your device</h3>
+    <h3 data-lang-block="ru">Регистрация устройства</h3>
+    <h3 data-lang-block="uk">Реєстрація пристрою</h3>
+
+    <p data-lang-block="en">Until the server recognizes your device, the Settings tab shows <strong>"Not registered"</strong> next to a QR code encoding your device's unique serial number. Give this serial (tap the text to copy it) or show the QR code to your administrator so they can link this device to your agent profile. Once linked, Settings will show your name and role instead.</p>
+    <p data-lang-block="ru">Пока сервер не распознал ваше устройство, во вкладке Настройки отображается надпись <strong>«Не зарегистрировано»</strong> рядом с QR-кодом, в котором зашит уникальный серийный номер устройства. Сообщите этот серийный номер (нажмите на текст, чтобы скопировать его) или покажите QR-код администратору, чтобы он привязал это устройство к вашему профилю агента. После привязки в Настройках появятся ваше имя и должность.</p>
+    <p data-lang-block="uk">Поки сервер не розпізнав ваш пристрій, у вкладці Налаштування відображається напис <strong>«Не зареєстровано»</strong> поруч із QR-кодом, у якому зашито унікальний серійний номер пристрою. Повідомте цей серійний номер (натисніть на текст, щоб скопіювати його) або покажіть QR-код адміністратору, щоб він прив'язав цей пристрій до вашого профілю агента. Після прив'язки в Налаштуваннях з'являться ваше ім'я та посада.</p>
+
+    <p data-lang-block="en">If you switch to a new phone, or need to re-link an existing agent to this device, tap the scan icon next to your identity card in Settings and scan the QR code your administrator provides — the app looks up and binds that agent profile right away.</p>
+    <p data-lang-block="ru">Если вы переходите на новый телефон или нужно повторно привязать существующего агента к этому устройству, нажмите значок сканирования рядом с карточкой профиля в Настройках и отсканируйте QR-код, предоставленный администратором — приложение сразу найдёт и привяжет этот профиль агента.</p>
+    <p data-lang-block="uk">Якщо ви переходите на новий телефон або потрібно повторно прив'язати наявного агента до цього пристрою, натисніть значок сканування поруч із карткою профілю в Налаштуваннях і відскануйте QR-код, наданий адміністратором — застосунок одразу знайде і прив'яже цей профіль агента.</p>
+
+    <!-- 2. Recording -->
+    <h2 id="recording" data-lang-block="en">2. Recording a Route</h2>
+    <h2 id="recording" data-lang-block="ru">2. Запись маршрута</h2>
+    <h2 id="recording" data-lang-block="uk">2. Запис маршруту</h2>
+
+    <ul data-lang-block="en">
+      <li>On the <strong>Record</strong> tab, tap <strong>Start recording track</strong> to begin. A persistent notification and an in-app elapsed-time counter appear while recording is active.</li>
+      <li>Recording keeps running in the background — with the screen off, the app minimized, or closed from "Recents".</li>
+      <li>If GPS signal is temporarily lost, the notification switches to an error state ("GPS signal lost") while the app keeps trying to resume recording.</li>
+      <li>If the app or its recording service is unexpectedly killed by the system, recording automatically resumes when possible.</li>
+      <li>Recording is only allowed inside a configurable time window (06:00–21:00 by default, see Settings). Outside that window, Start is disabled, and an active recording stops automatically when the window ends.</li>
+      <li>Tap the stop control to end the recording. You'll be prompted to open History to review and upload it.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li>На вкладке <strong>Запись</strong> нажмите <strong>«Начать запись трека»</strong>, чтобы начать. Пока запись активна, отображается постоянное уведомление и счётчик прошедшего времени в приложении.</li>
+      <li>Запись продолжает работать в фоне — при выключенном экране, свёрнутом приложении или его закрытии из списка «Недавние».</li>
+      <li>Если сигнал GPS временно потерян, уведомление переключается в состояние ошибки («Сигнал GPS потерян»), а приложение продолжает попытки возобновить запись.</li>
+      <li>Если система неожиданно завершает приложение или его сервис записи, запись автоматически возобновляется, когда это становится возможно.</li>
+      <li>Запись разрешена только в пределах настраиваемого временного окна (по умолчанию 06:00–21:00, см. Настройки). Вне этого окна кнопка «Начать» недоступна, а активная запись автоматически останавливается по окончании окна.</li>
+      <li>Нажмите кнопку остановки, чтобы завершить запись. Приложение предложит перейти в Историю, чтобы проверить и выгрузить трек.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li>На вкладці <strong>Запис</strong> натисніть <strong>«Почати запис треку»</strong>, щоб розпочати. Поки запис активний, відображається постійне сповіщення та лічильник часу, що минув, у застосунку.</li>
+      <li>Запис продовжує працювати у фоні — при вимкненому екрані, згорнутому застосунку чи його закритті зі списку «Останні».</li>
+      <li>Якщо сигнал GPS тимчасово втрачено, сповіщення перемикається в стан помилки («Сигнал GPS втрачено»), а застосунок продовжує намагатися відновити запис.</li>
+      <li>Якщо система несподівано завершує застосунок або його сервіс запису, запис автоматично відновлюється, щойно це стає можливим.</li>
+      <li>Запис дозволено лише в межах налаштовуваного часового вікна (за замовчуванням 06:00–21:00, див. Налаштування). Поза цим вікном кнопка «Почати» недоступна, а активний запис автоматично зупиняється по завершенні вікна.</li>
+      <li>Натисніть кнопку зупинки, щоб завершити запис. Застосунок запропонує перейти до Історії, щоб перевірити та вивантажити трек.</li>
+    </ul>
+
+    <!-- 3. History -->
+    <h2 id="history" data-lang-block="en">3. History</h2>
+    <h2 id="history" data-lang-block="ru">3. История</h2>
+    <h2 id="history" data-lang-block="uk">3. Історія</h2>
+
+    <p data-lang-block="en">The History tab has two segments: <strong>Recordings</strong> (tracks stored on this device) and <strong>Routes</strong> (routes already confirmed by the server, last 10 days).</p>
+    <p data-lang-block="ru">Вкладка История содержит два раздела: <strong>Записи</strong> (треки, хранящиеся на этом устройстве) и <strong>Маршруты</strong> (маршруты, уже подтверждённые сервером, за последние 10 дней).</p>
+    <p data-lang-block="uk">Вкладка Історія містить два розділи: <strong>Записи</strong> (треки, що зберігаються на цьому пристрої) і <strong>Маршрути</strong> (маршрути, вже підтверджені сервером, за останні 10 днів).</p>
+
+    <h3 data-lang-block="en">Recordings</h3>
+    <h3 data-lang-block="ru">Записи</h3>
+    <h3 data-lang-block="uk">Записи</h3>
+
+    <ul data-lang-block="en">
+      <li>Each card shows the date, duration, distance, and an upload-status badge: <em>not uploaded</em>, <em>uploading…</em>, <em>uploaded</em>, or <em>upload error</em>.</li>
+      <li>Swipe a card to reveal a delete action; confirm to permanently remove the recording and all its points.</li>
+      <li>Tap a card to open its <strong>Track Details</strong>.</li>
+      <li>Tracks are uploaded automatically in the background with retries, and are removed from the device the day after a successful upload.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li>Каждая карточка показывает дату, длительность, дистанцию и бейдж статуса выгрузки: <em>не выгружен</em>, <em>выгружается...</em>, <em>выгружен</em> или <em>ошибка выгрузки</em>.</li>
+      <li>Смахните карточку, чтобы открыть действие удаления; подтвердите, чтобы навсегда удалить запись и все её точки.</li>
+      <li>Нажмите на карточку, чтобы открыть <strong>Детали трека</strong>.</li>
+      <li>Треки автоматически выгружаются в фоне с повторными попытками и удаляются с устройства на следующий день после успешной выгрузки.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li>Кожна картка показує дату, тривалість, дистанцію та бейдж статусу вивантаження: <em>не вивантажено</em>, <em>вивантажується...</em>, <em>вивантажено</em> або <em>помилка вивантаження</em>.</li>
+      <li>Змахніть картку, щоб відкрити дію видалення; підтвердіть, щоб назавжди видалити запис і всі його точки.</li>
+      <li>Натисніть на картку, щоб відкрити <strong>Деталі треку</strong>.</li>
+      <li>Треки автоматично вивантажуються у фоні з повторними спробами та видаляються з пристрою наступного дня після успішного вивантаження.</li>
+    </ul>
+
+    <h3 data-lang-block="en">Routes</h3>
+    <h3 data-lang-block="ru">Маршруты</h3>
+    <h3 data-lang-block="uk">Маршрути</h3>
+
+    <ul data-lang-block="en">
+      <li>Pull down to refresh and see routes confirmed by the server over the last 10 days.</li>
+      <li>Tap a route card to open its <strong>Track Details</strong>.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li>Потяните вниз, чтобы обновить список маршрутов, подтверждённых сервером за последние 10 дней.</li>
+      <li>Нажмите на карточку маршрута, чтобы открыть его <strong>Детали трека</strong>.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li>Потягніть вниз, щоб оновити список маршрутів, підтверджених сервером за останні 10 днів.</li>
+      <li>Натисніть на картку маршруту, щоб відкрити його <strong>Деталі треку</strong>.</li>
+    </ul>
+
+    <h3 data-lang-block="en">Track Details</h3>
+    <h3 data-lang-block="ru">Детали трека</h3>
+    <h3 data-lang-block="uk">Деталі треку</h3>
+
+    <ul data-lang-block="en">
+      <li>The back button in the top bar returns to History.</li>
+      <li>An info card summarizes the start time, end time, duration, point count, and upload status.</li>
+      <li>Below it, a map shows the recorded path (OpenStreetMap tiles), followed by a full table of points (time, coordinates, speed, accuracy) — very long tracks hide some middle rows to keep the screen responsive, shown as "… N points hidden …".</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li>Кнопка «Назад» в верхней панели возвращает в Историю.</li>
+      <li>Карточка сведений показывает время начала, время окончания, длительность, количество точек и статус выгрузки.</li>
+      <li>Ниже расположена карта с записанным маршрутом (тайлы OpenStreetMap), а под ней — полная таблица точек (время, координаты, скорость, точность); в очень длинных треках часть строк в середине скрывается для скорости работы экрана и обозначается как «… скрыто N точек …».</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li>Кнопка «Назад» у верхній панелі повертає до Історії.</li>
+      <li>Картка відомостей показує час початку, час завершення, тривалість, кількість точок і статус вивантаження.</li>
+      <li>Нижче розташована карта із записаним маршрутом (тайли OpenStreetMap), а під нею — повна таблиця точок (час, координати, швидкість, точність); у дуже довгих треках частину рядків посередині приховано для швидкодії екрана, позначено як «… приховано N точок …».</li>
+    </ul>
+
+    <!-- 4. Delivery points -->
+    <h2 id="points" data-lang-block="en">4. Delivery Points</h2>
+    <h2 id="points" data-lang-block="ru">4. Точки доставки</h2>
+    <h2 id="points" data-lang-block="uk">4. Точки доставки</h2>
+
+    <p data-lang-block="en">The Points tab lists delivery points synced from the server and cached on the device, refreshed automatically whenever the data actually changes.</p>
+    <p data-lang-block="ru">Вкладка Точки показывает список точек доставки, синхронизированных с сервера и кэшированных на устройстве; список автоматически обновляется при реальном изменении данных.</p>
+    <p data-lang-block="uk">Вкладка Точки показує список точок доставки, синхронізованих із сервера та кешованих на пристрої; список автоматично оновлюється за реальної зміни даних.</p>
+
+    <h3 data-lang-block="en">Finding a point</h3>
+    <h3 data-lang-block="ru">Поиск точки</h3>
+    <h3 data-lang-block="uk">Пошук точки</h3>
+
+    <ul data-lang-block="en">
+      <li>Tap the search icon and type a code, address, name, or linked client to filter the list as you type.</li>
+      <li>Tap <strong>Filters</strong> to combine: <em>with coordinates</em>, <em>with clarification</em>, <em>registered</em> (today). <strong>Reset</strong> clears them; <strong>Done</strong> applies and closes the sheet.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li>Нажмите значок поиска и введите код, адрес, название или связанного клиента — список фильтруется по мере ввода.</li>
+      <li>Нажмите <strong>«Фильтры»</strong>, чтобы скомбинировать: <em>только с координатами</em>, <em>только с уточнениями</em>, <em>только зарегистрированные</em> (сегодня). <strong>«Сбросить»</strong> очищает фильтры; <strong>«Готово»</strong> применяет их и закрывает лист.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li>Натисніть значок пошуку і введіть код, адресу, назву або пов'язаного клієнта — список фільтрується під час введення.</li>
+      <li>Натисніть <strong>«Фільтри»</strong>, щоб скомбінувати: <em>лише з координатами</em>, <em>лише з уточненнями</em>, <em>лише зареєстровані</em> (сьогодні). <strong>«Скинути»</strong> очищає фільтри; <strong>«Готово»</strong> застосовує їх і закриває лист.</li>
+    </ul>
+
+    <h3 data-lang-block="en">Status badges</h3>
+    <h3 data-lang-block="ru">Бейджи статуса</h3>
+    <h3 data-lang-block="uk">Бейджі статусу</h3>
+
+    <ul data-lang-block="en">
+      <li><strong>Registered</strong> — checked in today, within the allowed distance from the point.</li>
+      <li><strong>Registered (far)</strong> — checked in today, but farther than the distance threshold; recorded together with a warning.</li>
+      <li><strong>Not visited</strong> — no check-in recorded for today yet.</li>
+      <li>A yellow warning icon on a card means the point has no coordinates yet — this is a heads-up, not an error, and it will disappear once the position is clarified.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li><strong>Зарегистрировано</strong> — чек-ин сегодня выполнен в пределах допустимого расстояния до точки.</li>
+      <li><strong>Зарегистрировано (далеко)</strong> — чек-ин сегодня выполнен, но с превышением порога расстояния; зафиксирован вместе с предупреждением.</li>
+      <li><strong>Не посещалась</strong> — сегодня чек-ин ещё не выполнялся.</li>
+      <li>Жёлтый значок предупреждения на карточке означает, что у точки пока нет координат — это предупреждение, а не ошибка, и оно исчезнет после уточнения позиции.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li><strong>Зареєстровано</strong> — чек-ін сьогодні виконано в межах допустимої відстані до точки.</li>
+      <li><strong>Зареєстровано (далеко)</strong> — чек-ін сьогодні виконано, але з перевищенням порогу відстані; зафіксовано разом із попередженням.</li>
+      <li><strong>Не відвідувалась</strong> — сьогодні чек-ін ще не виконувався.</li>
+      <li>Жовтий значок попередження на картці означає, що в точки поки немає координат — це попередження, а не помилка, і воно зникне після уточнення позиції.</li>
+    </ul>
+
+    <h3 data-lang-block="en">Opening a point on the map</h3>
+    <h3 data-lang-block="ru">Открытие точки на карте</h3>
+    <h3 data-lang-block="uk">Відкриття точки на карті</h3>
+
+    <p data-lang-block="en">Tap anywhere on a point's card (outside the swipe actions) to open it in Google Maps, with a fallback to the system map handler — this only works if the point already has coordinates.</p>
+    <p data-lang-block="ru">Нажмите в любом месте карточки точки (вне зоны свайп-действий), чтобы открыть её в Google Maps с фоллбеком на системный обработчик карт — это работает только если у точки уже есть координаты.</p>
+    <p data-lang-block="uk">Натисніть у будь-якому місці картки точки (поза зоною свайп-дій), щоб відкрити її в Google Maps із фолбеком на системний обробник карт — це працює лише якщо в точки вже є координати.</p>
+
+    <h3 data-lang-block="en">Check-in</h3>
+    <h3 data-lang-block="ru">Регистрация (чек-ин)</h3>
+    <h3 data-lang-block="uk">Реєстрація (чек-ін)</h3>
+
+    <p data-lang-block="en">Swipe a point's card and tap <strong>Check-in</strong> to register your visit. Your GPS distance to the point is checked against a threshold (150 m by default); if you're farther away, a confirmation dialog warns you and lets you check in anyway, marked as "far".</p>
+    <p data-lang-block="ru">Смахните карточку точки и нажмите <strong>«Регистрация»</strong>, чтобы зарегистрировать визит. Расстояние по GPS до точки сравнивается с порогом (по умолчанию 150 м); если вы дальше, появится диалог с предупреждением, где можно всё равно подтвердить регистрацию — она будет отмечена как «далеко».</p>
+    <p data-lang-block="uk">Змахніть картку точки і натисніть <strong>«Реєстрація»</strong>, щоб зареєструвати візит. Відстань за GPS до точки порівнюється з порогом (за замовчуванням 150 м); якщо ви далі, з'явиться діалог із попередженням, де можна все одно підтвердити реєстрацію — її буде позначено як «далеко».</p>
+
+    <h3 data-lang-block="en">Clarifying a point's position</h3>
+    <h3 data-lang-block="ru">Уточнение позиции точки</h3>
+    <h3 data-lang-block="uk">Уточнення позиції точки</h3>
+
+    <p data-lang-block="en">If a point has no coordinates yet, swipe its card and tap <strong>Clarify</strong> to save your current GPS position as the point's location. The app only accepts a position it can actually verify falls inside Ukraine's borders — if GPS is unavailable, disabled, or the signal can't be trusted, clarification is refused with "Could not get your location. Try again." rather than silently accepting an unverifiable position.</p>
+    <p data-lang-block="ru">Если у точки ещё нет координат, смахните карточку и нажмите <strong>«Позиция»</strong>, чтобы сохранить вашу текущую GPS-позицию как местоположение точки. Приложение принимает только позицию, которую оно может реально проверить на попадание в границы Украины — если GPS недоступен, отключён или сигналу нельзя доверять, уточнение отклоняется с сообщением «Не удалось получить вашу позицию. Попробуйте снова.» вместо того, чтобы молча принять непроверенную позицию.</p>
+    <p data-lang-block="uk">Якщо в точки ще немає координат, змахніть картку і натисніть <strong>«Позиція»</strong>, щоб зберегти вашу поточну GPS-позицію як місцезнаходження точки. Застосунок приймає лише позицію, яку він реально може перевірити на входження в межі України — якщо GPS недоступний, вимкнений або сигналу не можна довіряти, уточнення відхиляється з повідомленням «Не вдалося отримати вашу позицію. Спробуйте знову.» замість того, щоб мовчки прийняти неперевірену позицію.</p>
+
+    <!-- 5. Settings -->
+    <h2 id="settings" data-lang-block="en">5. Settings</h2>
+    <h2 id="settings" data-lang-block="ru">5. Настройки</h2>
+    <h2 id="settings" data-lang-block="uk">5. Налаштування</h2>
+
+    <ul data-lang-block="en">
+      <li><strong>Identity card &amp; QR</strong> — your agent name/role once registered, or your device's serial QR while not (see <a href="#getting-started">Getting Started</a>).</li>
+      <li><strong>App permissions</strong> — jumps to the system permissions screen for this app.</li>
+      <li><strong>Background app management</strong> — opens the manufacturer's battery/background settings, useful if recording keeps getting interrupted.</li>
+      <li><strong>Server address</strong> — the API endpoint the app talks to; editable for pointing at a test/staging server. Shows the connected API version.</li>
+      <li><strong>Recording notification sound</strong> — turns the recording notification's sound on or off.</li>
+      <li><strong>Limit recording time</strong> — enables the recording window and lets you set its start and end time.</li>
+      <li><strong>Dark theme</strong> — switches instantly across the whole app.</li>
+      <li><strong>Allow screen rotation</strong> — lets screens rotate with the device instead of staying portrait-locked.</li>
+      <li><strong>App version</strong> — shown at the bottom of the screen; include it when reporting a problem.</li>
+    </ul>
+    <ul data-lang-block="ru">
+      <li><strong>Карточка профиля и QR</strong> — имя и должность агента после регистрации или QR-код с серийным номером устройства, пока регистрации нет (см. раздел <a href="#getting-started">«Начало работы»</a>).</li>
+      <li><strong>Разрешения приложения</strong> — переход к системному экрану разрешений для этого приложения.</li>
+      <li><strong>Управление фоновыми приложениями</strong> — открывает настройки батареи/фона производителя устройства; полезно, если запись постоянно прерывается.</li>
+      <li><strong>Адрес сервера</strong> — API-адрес, с которым работает приложение; можно изменить, чтобы направить приложение на тестовый сервер. Показывает подключённую версию API.</li>
+      <li><strong>Звук уведомления о записи</strong> — включает или отключает звук уведомления о записи.</li>
+      <li><strong>Ограничить время записи</strong> — включает окно времени записи и позволяет задать его начало и конец.</li>
+      <li><strong>Тёмная тема</strong> — переключается мгновенно во всём приложении.</li>
+      <li><strong>Разрешить поворот экрана</strong> — позволяет экранам поворачиваться вместе с устройством вместо фиксированного портретного положения.</li>
+      <li><strong>Версия приложения</strong> — отображается внизу экрана; указывайте её при сообщении о проблеме.</li>
+    </ul>
+    <ul data-lang-block="uk">
+      <li><strong>Картка профілю та QR</strong> — ім'я та посада агента після реєстрації або QR-код із серійним номером пристрою, поки реєстрації немає (див. розділ <a href="#getting-started">«Початок роботи»</a>).</li>
+      <li><strong>Дозволи застосунку</strong> — перехід до системного екрана дозволів для цього застосунку.</li>
+      <li><strong>Управління фоновими застосунками</strong> — відкриває налаштування батареї/фону виробника пристрою; корисно, якщо запис постійно переривається.</li>
+      <li><strong>Адреса сервера</strong> — API-адреса, з якою працює застосунок; можна змінити, щоб спрямувати застосунок на тестовий сервер. Показує підключену версію API.</li>
+      <li><strong>Звук сповіщення про запис</strong> — вмикає або вимикає звук сповіщення про запис.</li>
+      <li><strong>Обмежити час запису</strong> — вмикає часове вікно запису та дозволяє задати його початок і кінець.</li>
+      <li><strong>Темна тема</strong> — перемикається миттєво в усьому застосунку.</li>
+      <li><strong>Дозволити поворот екрана</strong> — дозволяє екранам повертатися разом із пристроєм замість фіксованого портретного положення.</li>
+      <li><strong>Версія застосунку</strong> — відображається внизу екрана; вказуйте її, повідомляючи про проблему.</li>
+    </ul>
+
+    <!-- Support -->
+    <h2 data-lang-block="en">Need more help?</h2>
+    <h2 data-lang-block="ru">Нужна дополнительная помощь?</h2>
+    <h2 data-lang-block="uk">Потрібна додаткова допомога?</h2>
+
+    <p data-lang-block="en">Something isn't covered here, or not working as expected? Contact <a href="mailto:d.gordienko@gmail.com">d.gordienko@gmail.com</a>. For questions about data collection, see the <a href="privacy.html">Privacy Policy</a>.</p>
+    <p data-lang-block="ru">Что-то не описано здесь или работает не так, как ожидалось? Напишите на <a href="mailto:d.gordienko@gmail.com">d.gordienko@gmail.com</a>. По вопросам сбора данных — смотрите <a href="privacy.html">Политику конфиденциальности</a>.</p>
+    <p data-lang-block="uk">Щось не описано тут або працює не так, як очікувалося? Напишіть на <a href="mailto:d.gordienko@gmail.com">d.gordienko@gmail.com</a>. З питань щодо збору даних — дивіться <a href="privacy.html">Політику конфіденційності</a>.</p>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap copyright">
+    <span>© 2026 Hermes Tracker · com.hermes.tracker</span>
+  </div>
+</footer>
+
+<script src="assets/js/lang.js"></script>
+</body>
+</html>

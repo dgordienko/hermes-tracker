@@ -374,9 +374,32 @@ h2.section-title {
   font-size: 15.5px;
 }
 
-.policy ul { padding-left: 20px; }
-.policy ul li { margin-bottom: 8px; }
-.policy ul li::marker { color: var(--accent-blue); }
+.policy h3 {
+  font-size: 16px;
+  margin: 24px 0 10px;
+  font-weight: 700;
+  color: var(--on-primary);
+}
+
+.policy ul, .policy ol { padding-left: 20px; }
+.policy ul li, .policy ol li { margin-bottom: 8px; }
+.policy ul li::marker, .policy ol li::marker { color: var(--accent-blue); }
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 40px;
+}
+
+.toc a.pill {
+  color: var(--on-secondary);
+  text-decoration: none;
+}
+.toc a.pill:hover {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
 
 .policy .updated {
   color: var(--on-secondary);

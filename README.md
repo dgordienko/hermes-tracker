@@ -9,6 +9,7 @@ Also hosts the app's Privacy Policy, required for the Google Play Console listin
 ## Structure
 
 - `index.html` — main description page (EN / RU / UK, switchable, no build step)
+- `guide.html` — User Guide: how to use the app, screen by screen (EN / RU / UK)
 - `privacy.html` — Privacy Policy (EN / RU / UK)
 - `assets/css/style.css` — shared styling
 - `assets/js/lang.js` — language switcher (detects browser language, persists choice in `localStorage`)
